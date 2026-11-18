@@ -235,6 +235,9 @@ body > main {
 #campus-stores .sectionhead {
   margin-bottom: 12px;
 }
+#campus-stores .sectionhead.checklist {
+  margin-top: 16px;
+}
 #campus-stores .sectionhead small {
   margin-top: 2px;
   display: block;
@@ -262,6 +265,10 @@ body > main {
 #campus-stores .good {
   background: var(--ok);
   color: var(--oktxt);
+}
+#campus-stores .warn {
+  background: var(--memo);
+  color: var(--memotxt);
 }
 #campus-stores .record {
   margin-top: 14px;
@@ -305,6 +312,48 @@ body > main {
 }
 #campus-stores .full {
   grid-column: 1/-1;
+}
+#campus-stores .form input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  flex-shrink: 0;
+}
+#campus-stores .picks {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin: 0;
+  padding: 8px 10px 10px;
+  min-width: 0;
+}
+#campus-stores .picks legend {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+#campus-stores .picks legend small {
+  font-weight: 400;
+  margin-left: 6px;
+}
+#campus-stores .picks .buttons {
+  margin: 4px 0 10px;
+}
+#campus-stores .picks .buttons label {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#campus-stores .picks .buttons label:has(input:checked) {
+  border-color: var(--sel);
+  background: var(--desk);
+}
+#campus-stores .form label.check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  color: var(--quiet);
 }
 #campus-stores textarea {
   resize: vertical;
